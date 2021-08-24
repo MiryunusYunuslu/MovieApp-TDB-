@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/basename"
+        android:text="NAME "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:maxWidth="250dp"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/overview"
+        android:text="sadsadsa sad sad sad sad sad sad asd asdsad sadsas ad asd sad sad"
+        android:textSize="15sp"
+        android:maxWidth="250dp"
+        android:ellipsize="end"
+        android:maxLines="6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basename"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/releasedate"
+        android:text="sadasdsad"
+        android:maxWidth="250dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/overview"
+        android:paddingLeft="30dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/image1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="260dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp"
+            />
+
+
+
+    <!--basename,,overview,image1  -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
